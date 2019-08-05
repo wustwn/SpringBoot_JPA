@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -19,7 +20,9 @@ public class UserService {
         List<User> urList=userRepo.findAll();
         return urList;
     }
-    public void removeByTaskProperty(String email){
-        userRepo.removeByTaskProperty(email);
+    public void removeByuserDetail(String email){
+        //userRepo.removeByTaskProperty(email);
+        Optional.ofNullable(userRepo.findByuserDetailLike("%"+email+"%"))
+                .ifPresent(userRepo::delete);
     }
 }

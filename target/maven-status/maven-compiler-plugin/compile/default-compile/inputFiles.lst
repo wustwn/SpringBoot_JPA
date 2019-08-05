@@ -1,5 +1,5 @@
-/home/wangning/Projects/AMS_AUTH/ssg_micro_runtime-ams/springbootdemo/src/main/java/com/sprinboot/test/Repository/UserRepository.java
-/home/wangning/Projects/AMS_AUTH/ssg_micro_runtime-ams/springbootdemo/src/main/java/com/sprinboot/test/api/UserApis.java
-/home/wangning/Projects/AMS_AUTH/ssg_micro_runtime-ams/springbootdemo/src/main/java/com/sprinboot/test/Example1Application.java
-/home/wangning/Projects/AMS_AUTH/ssg_micro_runtime-ams/springbootdemo/src/main/java/com/sprinboot/test/pojo/User.java
-/home/wangning/Projects/AMS_AUTH/ssg_micro_runtime-ams/springbootdemo/src/main/java/com/sprinboot/test/Service/UserService.java
+/home/wangning/Projects/SpringBoot_JPA/src/main/java/com/sprinboot/test/api/UserApis.java
+/home/wangning/Projects/SpringBoot_JPA/src/main/java/com/sprinboot/test/Service/UserService.java
+/home/wangning/Projects/SpringBoot_JPA/src/main/java/com/sprinboot/test/Example1Application.java
+/home/wangning/Projects/SpringBoot_JPA/src/main/java/com/sprinboot/test/Repository/UserRepository.java
+/home/wangning/Projects/SpringBoot_JPA/src/main/java/com/sprinboot/test/pojo/User.java

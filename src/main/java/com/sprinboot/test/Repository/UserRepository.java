@@ -5,6 +5,8 @@ import com.sprinboot.test.pojo.User;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
+
 public interface UserRepository extends JpaRepository<User,Integer> {
 
 //    @Modifying
@@ -15,4 +17,6 @@ public interface UserRepository extends JpaRepository<User,Integer> {
      * will report error information ： unexpected token : >
      *
      **/
+//    @Query("select u from User u where u.userDetail like %?1%")
+   public List<User> findByuserDetailLike(String userDetail);
 }

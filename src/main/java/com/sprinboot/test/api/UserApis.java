@@ -1,5 +1,5 @@
 package com.sprinboot.test.api;
-//This line is for testing
+
 import com.google.gson.JsonArray;
 import com.sprinboot.test.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +20,8 @@ public class UserApis {
     public String addNewUser(@RequestParam String name, @RequestParam String password) {
         try {
             User u = new User();
-            u.setName("nick");
-            u.setPwd("intel@123");
+            u.setName(name);
+            u.setPwd(password);
             JsonObject juserdetail = new JsonObject();
             juserdetail.addProperty("email","intel@123");
             u.setUserDetail(juserdetail.toString());
@@ -56,8 +56,10 @@ public class UserApis {
     @RequestMapping(value = "/deleteUser",method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<String> deleteUser() {
-        //userSrv.removeByTaskProperty("intel@123");
-
+        //JsonObject jUserDtls=new JsonObject();
+        //jUserDtls.addProperty("email","intel@123");
+        //userSrv.removeByuserDetail(jUserDtls.toString());
+        userSrv.removeByuserDetail("intel@123");
         return new ResponseEntity<String>("delete successfully", HttpStatus.OK);
     }
 
