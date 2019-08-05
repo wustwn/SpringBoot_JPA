@@ -14,6 +14,5 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     /**
      * will report error information ： unexpected token : >
      *
-     *
      **/
 }
