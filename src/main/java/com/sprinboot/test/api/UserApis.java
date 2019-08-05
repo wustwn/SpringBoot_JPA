@@ -56,7 +56,7 @@ public class UserApis {
     @RequestMapping(value = "/deleteUser",method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<String> deleteUser() {
-        userSrv.removeByTaskProperty("intel@123");
+        //userSrv.removeByTaskProperty("intel@123");
 
         return new ResponseEntity<String>("delete successfully", HttpStatus.OK);
     }

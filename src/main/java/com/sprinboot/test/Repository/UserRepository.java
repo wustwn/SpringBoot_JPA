@@ -7,7 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface UserRepository extends JpaRepository<User,Integer> {
 
-    @Modifying
-    @Query("delete from user where user_detail->'$.email' = ?1")
-    void removeByTaskProperty(String email);
+//    @Modifying
+//    @Query("delete from user where user_detail->'$.email' = ?1")
+//    void removeByTaskProperty(String email);
+
+    /**
+     * will report error information ： unexpected token : >
+     **/
 }
